@@ -406,6 +406,8 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('name')->end()
                 ->booleanNode('passive')->defaultFalse()->end()
                 ->booleanNode('durable')->defaultTrue()->end()
+                ->booleanNode('no_local')->defaultFalse()->end()
+                ->booleanNode('no_ack')->defaultFalse()->end()
                 ->booleanNode('exclusive')->defaultFalse()->end()
                 ->booleanNode('auto_delete')->defaultFalse()->end()
                 ->booleanNode('nowait')->defaultFalse()->end()
